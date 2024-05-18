@@ -67,7 +67,7 @@ class LoginScreen extends StatelessWidget {
               BlocConsumer<LoginBloc, LoginState>(
                 listener: (context, state) {
                   print(state);
-                  if (state is ExceptionLoginState) {
+                  if (state is ExceptionLoginState || state is FailLoginState) {
                     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                       content: Text(
                         "Login has been failed",
