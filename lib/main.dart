@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
       initialRoute: rout,
 
       routes: {
-        '/login':(context) => BlocProvider<LoginBloc>(create: (context)=>LoginBloc(),child:const LoginScreen(),),
+        '/login':(context) => BlocProvider<LoginBloc>(create: (context)=>LoginBloc(),child: LoginScreen(),),
         '/':(context)=>BlocProvider<HomeBloc>(create: (context)=>HomeBloc()..add(GetDataEvent()),child: const HomeScreen(),),
       },
     );
