@@ -22,16 +22,6 @@ todo TEXT NOT NULL,
 completed INTEGER NOT NULL ,
 userId INTEGER NOT NULL
 );
-CREATE TABLE person (
-  id INTEGER NOT NULL PRIMARY KEY,
-  username TEXT NOT NULL,
-  email TEXT NOT NULL,
-  firstName TEXT NOT NULL,
-  lastName TEXT NOT NULL,
-  gender TEXT NOT NULL,
-  image TEXT NOT NULL,
-  token TEXT NOT NULL
-);
 ''');
   }
 
